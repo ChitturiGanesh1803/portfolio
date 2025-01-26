@@ -275,9 +275,6 @@ html {
 }
 
 @media (max-width: 576px) {
-    .hero{
-        height: 85%;
-    }
     .hero h1 {
         font-size: 32px;
     }
