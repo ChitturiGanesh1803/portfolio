@@ -314,6 +314,7 @@ html {
         font-style: italic;
     }
     .hero{
+        height: 400px ;
         padding-bottom: 400px;
     } 
     .hero h1 {
