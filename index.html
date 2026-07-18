@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io;"
+    />
+    <title>Sai Ganesh Kumar Chitturi — Cybersecurity & Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Sai Ganesh Kumar Chitturi — Cybersecurity professional and full-stack developer. Browse projects, experience, skills, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="Cybersecurity, SOC Analyst, Pen testing, Full-Stack Developer, Splunk, Snort, React, Django, Portfolio"
+    />
+    <link rel="canonical" href="https://chitturiganesh1803.github.io/portfolio/index.html" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Sai Ganesh Kumar Chitturi — Cybersecurity & Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Cybersecurity professional with experience in SIEM, pentesting, and secure web development. Explore projects and contact for opportunities."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/images/portfolio/dp.jpeg" />
+    <meta property="og:url" content="https://chitturiganesh1803.github.io/portfolio/index.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="./assets/styles/style.css?v=1.1" />
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sai Ganesh Kumar Chitturi",
+        "jobTitle": "Cybersecurity Specialist & Full-Stack Developer",
+        "url": "https://chitturiganesh1803.github.io/portfolio/index.html",
+        "sameAs": ["https://www.linkedin.com/in/ganesh-chitturi-9909ab287/", "https://github.com/ChitturiGanesh1803"],
+        "knowsAbout": [
+          "Cybersecurity",
+          "SIEM & Monitoring",
+          "Vulnerability Testing",
+          "SOC Analyst",
+          "Full-Stack Web Development",
+          "React.js",
+          "Django",
+          "Python"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Preloader splash screen -->
+    <div id="preloader" role="status" aria-label="Loading page">
+      <div class="preloader-spinner"></div>
+    </div>
+
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <div id="nav-container"></div>
+
+    <main id="main">
+      <!-- Profile / Hero Section -->
+      <section id="profile">
+        <div class="section__text reveal">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Sai Ganesh Kumar Chitturi</h1>
+
+          <!-- Typing Animation Text -->
+          <p class="section__text__p2">
+            <span id="typed-text"></span>
+          </p>
+
+          <span class="availability-badge" aria-label="Employment status: Available">
+            <span class="status-dot pulse" aria-hidden="true"></span>
+            Available for SOC Analyst &amp; Cybersecurity roles
+          </span>
+
+          <!-- Buttons -->
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="downloadAndViewCV()">View CV</button>
+            <button class="btn btn-color-1" onclick="location.href = '#contact'">Contact Info</button>
+          </div>
+
+          <!-- Social Links -->
+          <div id="socials-container">
+            <a
+              href="https://www.linkedin.com/in/ganesh-chitturi-9909ab287/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+            >
+              <img src="./assets/images/portfolio/linkedin.png" alt="LinkedIn logo" class="icon" />
+            </a>
+            <a
+              href="https://github.com/ChitturiGanesh1803"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+            >
+              <img src="./assets/images/portfolio/github.png" alt="GitHub logo" class="icon" />
+            </a>
+          </div>
+        </div>
+
+        <div class="section__pic-container reveal">
+          <img
+            src="./assets/images/portfolio/dp.jpeg"
+            alt="Sai Ganesh Kumar Chitturi profile picture"
+            loading="eager"
+          />
+        </div>
+
+        <div class="status-panel reveal">
+          <p class="status-panel__head">Session Status</p>
+          <div class="meta-row">
+            <span class="meta-label">Status</span>
+            <span class="meta-value">
+              <span class="status-dot pulse" aria-hidden="true"></span>
+              Available
+            </span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Experience</span>
+            <span class="meta-value">2 years</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">SOC / Threat Detection</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Based in</span>
+            <span class="meta-value">Guntur, IN</span>
+          </div>
+        </div>
+        <div
+          class="arrow"
+          role="link"
+          tabindex="0"
+          aria-label="Scroll to About"
+          onclick="location.href = '#about'"
+          onkeydown="
+            if (event.key === 'Enter' || event.key === ' ') {
+              location.href = '#about';
+            }
+          "
+        >
+          <img src="./assets/images/portfolio/arrow.png" alt="Downward arrow icon" class="icon" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h2 class="title">About Me</h2>
+
+        <div class="section-container">
+          <div class="about-containers reveal">
+            <div class="details-container reveal">
+              <img src="./assets/images/portfolio/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>
+                2+ years
+                <br />
+                Cyber Security &amp; Full-Stack Development
+              </p>
+            </div>
+            <div class="details-container reveal">
+              <img src="./assets/images/portfolio/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>
+                B.Tech. Computer Science (Cybersecurity)
+                <br />
+                JNTUK St. Mary's Group of Institutions
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <h2>Hi!</h2>
+            <p>
+              I am a cybersecurity graduate with hands-on experience in security monitoring, vulnerability assessment,
+              and web application security. Experienced with SIEM analysis, penetration testing, and secure full-stack
+              development.
+            </p>
+            <p>
+              I am passionate about cybersecurity with hands-on experience in penetration testing, security monitoring,
+              and secure web application development. I enjoy identifying vulnerabilities and building secure systems.
+            </p>
+            <p>
+              Seeking an entry-level SOC Analyst or Junior Cybersecurity role where I can apply my skills in threat
+              detection, incident response, and secure application development.
+            </p>
+            <p>
+              <strong>Education:</strong>
+              B.Tech Computer Science (Cybersecurity) – CGPA 7.65, JNTUK St. Mary's Group of Institutions (2020 – 2024)
+              | Intermediate MPC – CGPA 8.34, Narayana Junior College (2018 – 2020) | SSC – CGPA 8.8, Narayana English
+              Medium High School (2018).
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="arrow"
+          role="link"
+          tabindex="0"
+          aria-label="Scroll to Tools and Technologies"
+          onclick="location.href = '#Tools'"
+          onkeydown="
+            if (event.key === 'Enter' || event.key === ' ') {
+              location.href = '#Tools';
+            }
+          "
+        >
+          <img src="./assets/images/portfolio/arrow.png" alt="Downward arrow icon" class="icon" />
+        </div>
+      </section>
+
+      <!-- Tools & Technologies Section -->
+      <section id="Tools">
+        <p class="section__text__p1">Explore My</p>
+        <h2 class="title">Tools &amp; Technologies</h2>
+
+        <div class="experience-details-container">
+          <div class="about-containers reveal">
+            <div class="details-container reveal">
+              <h3 class="experience-sub-title">Frontend Development</h3>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/images/portfolio/html (2).png" alt="HTML logo" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/images/portfolio/css.png" alt="CSS logo" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/images/portfolio/js.png" alt="JavaScript logo" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                  </div>
+                </article>
+                <article>
+                  <div class="skill-icon-fallback">RE</div>
+                  <div>
+                    <h3>React.js</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container reveal">
+              <h3 class="experience-sub-title">Back-End Development</h3>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/images/portfolio/python.png" alt="Python logo" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/images/portfolio/django.png" alt="Django logo" class="icon" />
+                  <div>
+                    <h3>Django</h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/images/portfolio/mysql.png" alt="MySQL logo" class="icon" />
+                  <div>
+                    <h3>MySQL</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="details-container reveal">
+              <h3 class="experience-sub-title">Cybersecurity Tools</h3>
+              <div class="article-container">
+                <article>
+                  <div class="skill-icon-fallback">SI</div>
+                  <div>
+                    <h3>SIEM &amp; Monitoring</h3>
+                    <p>Splunk, Snort</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="skill-icon-fallback">NA</div>
+                  <div>
+                    <h3>Network Analysis</h3>
+                    <p>Nmap, Wireshark</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="skill-icon-fallback">VT</div>
+                  <div>
+                    <h3>Vulnerability Testing</h3>
+                    <p>Nessus, Burp Suite, OWASP ZAP</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="skill-icon-fallback">EX</div>
+                  <div>
+                    <h3>Exploitation Tools</h3>
+                    <p>Metasploit, Hydra</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="skill-icon-fallback">CR</div>
+                  <div>
+                    <h3>Security Tools</h3>
+                    <p>VeraCrypt, BitLocker</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="arrow"
+          role="link"
+          tabindex="0"
+          aria-label="Scroll to Experience"
+          onclick="location.href = '#experience'"
+          onkeydown="
+            if (event.key === 'Enter' || event.key === ' ') {
+              location.href = '#experience';
+            }
+          "
+        >
+          <img src="./assets/images/portfolio/arrow.png" alt="Downward arrow icon" class="icon" />
+        </div>
+      </section>
+
+      <!-- Professional Experience Section -->
+      <section id="experience">
+        <p class="section__text__p1">My Journey</p>
+        <h2 class="title">Professional Experience</h2>
+
+        <div class="experience-container">
+          <!-- Experience 1 -->
+          <div class="details-container reveal">
+            <h3 class="experience-sub-title">INFOTACT SOLUTIONS</h3>
+            <div class="article-container">
+              <article>
+                <img src="./assets/images/portfolio/DVi_logo.jpeg" alt="INFOTACT SOLUTIONS logo" class="icon" />
+                <div>
+                  <h3>Cyber Security Intern</h3>
+                  <p>
+                    <strong>Duration:</strong>
+                    Oct 2025 – Jan 2026
+                  </p>
+                  <p><strong>Responsibilities:</strong></p>
+                  <ul>
+                    <li>Monitored security logs and alerts using SIEM tools.</li>
+                    <li>Identified suspicious activities and supported incident response.</li>
+                    <li>Performed vulnerability assessments using Burp Suite and OWASP ZAP.</li>
+                    <li>Analyzed network traffic and alerts using Snort.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="details-container reveal">
+            <h3 class="experience-sub-title">DATAVALLEY.AI</h3>
+            <div class="article-container">
+              <article>
+                <img src="./assets/images/portfolio/DVi_logo.jpeg" alt="DATAVALLEY.AI logo" class="icon" />
+                <div>
+                  <h3>Software Engineer - Cyber Security</h3>
+                  <p>
+                    <strong>Duration:</strong>
+                    Oct 2023 – May 2025
+                  </p>
+                  <p><strong>Responsibilities:</strong></p>
+                  <ul>
+                    <li>Developed secure web applications using React.js, Django, and MySQL.</li>
+                    <li>Implemented secure authentication systems and RBAC.</li>
+                    <li>Performed web application security testing using Burp Suite and Nessus.</li>
+                    <li>Identified vulnerabilities including XSS and authentication flaws.</li>
+                    <li>Collaborated in Agile teams on scalable application development.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div
+          class="arrow"
+          role="link"
+          tabindex="0"
+          aria-label="Scroll to Projects"
+          onclick="location.href = '#projects'"
+          onkeydown="
+            if (event.key === 'Enter' || event.key === ' ') {
+              location.href = '#projects';
+            }
+          "
+        >
+          <img src="./assets/images/portfolio/arrow.png" alt="Downward arrow icon" class="icon" />
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h2 class="title">Projects</h2>
+        <div class="experience-details-container">
+          <div class="about-containers reveal">
+            <!-- Project One -->
+            <div class="details-container color-container reveal">
+              <h3 class="project-title">CTF &amp; OSINT Challenges</h3>
+              <p>
+                Performed network enumeration, vulnerability exploitation, and privilege escalation through CTF labs
+                simulating real-world attacks. (2025 – Present)
+              </p>
+            </div>
+
+            <!-- Project Two -->
+            <div class="details-container color-container reveal">
+              <h3 class="project-title">AI-Driven Cyber Threat Detection System</h3>
+              <p>Built a threat detection dashboard using Python, Streamlit and VirusTotal API.</p>
+            </div>
+
+            <!-- Project Three -->
+            <div class="details-container color-container reveal">
+              <h3 class="project-title">LMS Platform Frontend UI</h3>
+              <p>Developed responsive dashboards, course listings and progress trackers using React.js.</p>
+            </div>
+
+            <!-- Project Four -->
+            <div class="details-container color-container reveal">
+              <h3 class="project-title">Securing Data with Blockchain and AI</h3>
+              <p>Implemented decentralized authentication and RBAC for secure data access.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="arrow"
+          role="link"
+          tabindex="0"
+          aria-label="Scroll to Contact"
+          onclick="location.href = '#contact'"
+          onkeydown="
+            if (event.key === 'Enter' || event.key === ' ') {
+              location.href = '#contact';
+            }
+          "
+        >
+          <img src="./assets/images/portfolio/arrow.png" alt="Downward arrow icon" class="icon" />
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h2 class="title">Contact Me</h2>
+
+        <div class="contact-details-wrapper">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:chitturiganesh1803@gmail.com">chitturiganesh1803@gmail.com</a>
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+919014781373">+91 9014781373</a>
+          </p>
+          <!-- <p>
+            <strong>Location:</strong>
+            Guntur, Andhra Pradesh, India
+          </p> -->
+        </div>
+
+        <form id="contactForm" action="https://formspree.io/f/mwplgedn" method="POST" autocomplete="off">
+          <input type="hidden" name="_subject" value="New Contact Form Submission" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <div class="form-group">
+            <label for="name" class="sr-only">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="sr-only">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="sr-only">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" id="submitBtn">Send Message</button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <div
+          class="arrow up"
+          role="link"
+          tabindex="0"
+          aria-label="Scroll to top"
+          onclick="location.href = '#profile'"
+          onkeydown="
+            if (event.key === 'Enter' || event.key === ' ') {
+              location.href = '#profile';
+            }
+          "
+        >
+          <img src="./assets/images/portfolio/arrow.png" alt="Upward arrow icon" class="icon" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright &copy; Sai Ganesh Kumar Chitturi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/nav.js"></script>
+    <script src="./assets/scripts/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      // Typing Animation (Typed.js) — skip if user prefers reduced motion
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const typedTarget = document.getElementById("typed-text");
+      if (typedTarget) {
+        if (prefersReducedMotion) {
+          typedTarget.textContent = "Cybersecurity Professional";
+        } else if (typeof Typed !== "undefined") {
+          var typed = new Typed("#typed-text", {
+            strings: ["Cybersecurity Professional", "SOC Analyst", "Full-Stack Developer"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+          });
+        } else {
+          typedTarget.textContent = "Cybersecurity Professional";
+        }
+      }
+
+      // Download / Open CV
+      function downloadAndViewCV() {
+        const fileUrl = "./assets/docs/Sai_Ganesh_Kumar_Chitturi.pdf";
+        const link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "Sai_Ganesh_Kumar_Chitturi.pdf";
+        link.rel = "noopener noreferrer";
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      // AJAX form submission handler
+      const contactForm = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const formStatus = document.getElementById("formStatus");
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending…";
+          formStatus.textContent = "";
+          formStatus.removeAttribute("data-state");
+
+          try {
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: new FormData(contactForm),
+              headers: { Accept: "application/json" }
+            });
+
+            if (response.ok) {
+              formStatus.textContent = "Message sent — thanks, I'll get back to you soon.";
+              formStatus.dataset.state = "success";
+              contactForm.reset();
+            } else {
+              formStatus.textContent = "Something went wrong. Please email me directly instead.";
+              formStatus.dataset.state = "error";
+            }
+          } catch (err) {
+            formStatus.textContent = "Network error. Please email me directly instead.";
+            formStatus.dataset.state = "error";
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

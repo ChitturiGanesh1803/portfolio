@@ -1,0 +1,259 @@
+/* Gallery page specific styling */
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  padding: 0 20px 20px;
+}
+
+#nav-container {
+  margin: 0 -20px 20px;
+  padding: 0 20px;
+}
+
+h1 {
+  font-family: var(--font-display);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2rem 0 0.5rem;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin: 1rem auto 2rem;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 2px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  padding: 1.25rem 0 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.college {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform var(--transition) var(--easing),
+    border-color var(--transition) var(--easing),
+    box-shadow var(--transition) var(--easing);
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 26px var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.college:hover,
+.college:focus-visible {
+  transform: translateY(-8px);
+  border-color: var(--border-strong);
+  box-shadow: 0 20px 40px var(--shadow);
+}
+
+.college img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: filter 0.4s ease;
+}
+
+.college:hover img {
+  filter: brightness(1.08);
+}
+
+.college p {
+  padding: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  background-color: var(--surface-2);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+
+.gallery {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(4, 8, 18, 0.72);
+  backdrop-filter: blur(6px);
+  overflow-y: auto;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease;
+}
+
+.gallery .close {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+  transition: color var(--transition-fast) ease;
+}
+.gallery .close:hover {
+  color: var(--primary);
+}
+
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 80px 40px 40px;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+.gallery .images img {
+  width: min(280px, calc(100vw - 40px));
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Card ratio overrides removed for grid consistency */
+
+.gallery .images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(4, 8, 18, 0.82);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.visible {
+  opacity: 1;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: var(--radius);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+#lightbox-img.fade {
+  opacity: 0.3;
+  transform: scale(0.98);
+}
+
+.lightbox .close,
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  transition: color var(--transition-fast) ease;
+}
+
+.lightbox .close:hover,
+.lightbox .prev:hover,
+.lightbox .next:hover {
+  color: var(--primary);
+}
+
+.lightbox .close {
+  top: 20px;
+  right: 30px;
+}
+.lightbox .prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.lightbox .next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 12px 20px;
+  }
+  #nav-container {
+    margin: 0 -12px 16px;
+    padding: 0 12px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 1.25rem 0 0.5rem;
+  }
+  .college {
+    width: 100%;
+  }
+  .gallery .images img {
+    max-width: 90%;
+  }
+}
