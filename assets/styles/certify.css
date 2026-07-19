@@ -17,6 +17,7 @@
   --nav-bg: rgba(248, 250, 252, 0.96);
 }
 
+/* Dark variant overrides (commented out to enforce light mode only)
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #07111f;
@@ -32,6 +33,7 @@
     --nav-bg: rgba(10, 18, 32, 0.96);
   }
 }
+*/
 
 body {
   font-family: var(--font-body);

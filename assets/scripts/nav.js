@@ -31,7 +31,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav" role="navigation" aria-label="Mobile">
-      <a class="logo" href="${homeHref}">SGC</a>
+      <a class="logo" href="${homeHref}">SGK_CH</a>
       <div class="hamburger-menu">
         <button id="hamburger-btn" class="hamburger-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu" onclick="toggleMenu()">
           <span></span>

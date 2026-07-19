@@ -13,21 +13,38 @@
   --font-body: "Inter", "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
-  /* Dark "console" palette (default) */
+  /* Light variant palette (Default) */
+  --bg: #f4f7fc;
+  --bg-accent: #eaf0fa;
+  --surface: #ffffff;
+  --surface-2: #f2f5fb;
+  --text: #101728;
+  --text-muted: #57647f;
+  --primary: #c17415;
+  --primary-strong: #9a5c0f;
+  --accent: #0e9e86;
+  --accent-glow: rgba(14, 158, 134, 0.08);
+  --border: rgba(16, 23, 40, 0.1);
+  --border-strong: rgba(16, 23, 40, 0.18);
+  --shadow: rgba(15, 23, 42, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.86);
+
+  /* Dark "console" palette (Commented out)
   --bg: #0a1120;
   --bg-accent: #0f1a30;
   --surface: #131f38;
   --surface-2: #182746;
   --text: #eaf0fb;
   --text-muted: #93a3c2;
-  --primary: #f2a93c; /* amber — identity / eyebrows / focus */
+  --primary: #f2a93c;
   --primary-strong: #f7bb63;
-  --accent: #2fd1b5; /* teal — status / verified / links */
+  --accent: #2fd1b5;
   --accent-glow: rgba(47, 209, 181, 0.12);
   --border: rgba(148, 177, 216, 0.14);
   --border-strong: rgba(148, 177, 216, 0.28);
   --shadow: rgba(2, 6, 20, 0.55);
   --nav-bg: rgba(10, 17, 32, 0.82);
+  */
 
   /* Design system spacing */
   --space-1: 0.25rem;
@@ -55,7 +72,7 @@
   --easing: cubic-bezier(0.2, 0.9, 0.3, 1);
 }
 
-/* Light variant overrides */
+/* Light variant overrides (commented out since light is default)
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f4f7fc;
@@ -74,6 +91,7 @@
     --nav-bg: rgba(255, 255, 255, 0.86);
   }
 }
+*/
 
 /* Accessibility: Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
@@ -418,7 +436,7 @@ nav {
   list-style: none;
 }
 .menu-links.open {
-  max-height: 320px;
+  max-height: 400px;
 }
 
 /* SECTIONS */
