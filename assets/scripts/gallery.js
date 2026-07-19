@@ -2,7 +2,6 @@
   // Gallery source data dictionary (replaces static HTML layout for high-speed page loads)
   const GALLERY_DATA = {
     college1: [
-      "../assets/images/gallery/ciet/ciet (1).jpg",
       "../assets/images/gallery/ciet/ciet (2).jpg",
       "../assets/images/gallery/ciet/ciet (3).jpg",
       "../assets/images/gallery/ciet/ciet (4).jpg"
@@ -48,9 +47,6 @@
       "../assets/images/gallery/pragati/pragati (3).jpg"
     ],
     college5: [
-      "../assets/images/gallery/rk/1.jpg",
-      "../assets/images/gallery/rk/2.jpg",
-      "../assets/images/gallery/rk/3.jpg",
       "../assets/images/gallery/rk/Rk (1).jpg",
       "../assets/images/gallery/rk/Rk (2).jpg",
       "../assets/images/gallery/rk/Rk (3).jpg",
@@ -67,14 +63,10 @@
       "../assets/images/gallery/stanns/stanns (5).jpg"
     ],
     college7: [
-      "../assets/images/gallery/stmarys/1 (1).jpg",
-      "../assets/images/gallery/stmarys/1 (2).jpg",
       "../assets/images/gallery/stmarys/1.jpg",
-      "../assets/images/gallery/stmarys/2 (1).jpg",
       "../assets/images/gallery/stmarys/2.jpg",
       "../assets/images/gallery/stmarys/3 (1).jpg",
       "../assets/images/gallery/stmarys/3 (2).jpg",
-      "../assets/images/gallery/stmarys/3.jpg",
       "../assets/images/gallery/stmarys/4 (1).jpg",
       "../assets/images/gallery/stmarys/4 (2).jpg",
       "../assets/images/gallery/stmarys/5 (1).jpg",
@@ -87,20 +79,12 @@
       "../assets/images/gallery/stmarys/stmarys_logo.jpg"
     ],
     college8: [
-      "../assets/images/gallery/eswar/1.jpg",
-      "../assets/images/gallery/eswar/2.jpg",
-      "../assets/images/gallery/eswar/3.jpg",
-      "../assets/images/gallery/eswar/4.jpg",
-      "../assets/images/gallery/eswar/5.jpg",
-      "../assets/images/gallery/eswar/eswarlogo.png"
-    ],
-    college9: [
-      "../assets/images/gallery/sacet/1.jpg",
-      "../assets/images/gallery/sacet/2.jpg",
-      "../assets/images/gallery/sacet/3.jpg",
-      "../assets/images/gallery/sacet/4.jpg",
-      "../assets/images/gallery/sacet/5.jpg",
-      "../assets/images/gallery/sacet/sacet.jpg"
+      "../assets/images/gallery/stmarys20/1 (1).jpg",
+      "../assets/images/gallery/stmarys20/1 (2).jpg",
+      "../assets/images/gallery/stmarys20/2 (1).jpg",
+      "../assets/images/gallery/stmarys20/3.jpg",
+      "../assets/images/gallery/stmarys20/6.jpg",
+      "../assets/images/gallery/stmarys20/stmarys_logo.jpg"
     ]
   };
 
