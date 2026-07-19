@@ -172,4 +172,24 @@
       }
     });
   });
+
+  // Manual Scroll Restoration to guarantee Hero section displays first on reload
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  window.addEventListener("load", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        // Delay slightly to let layout/preloader finish
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  });
 })();
