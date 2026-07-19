@@ -364,6 +364,7 @@ nav {
   font-family: var(--font-display);
   font-size: 1.6rem;
   font-weight: 600;
+  text-decoration: none;
 }
 .logo:hover {
   cursor: default;
