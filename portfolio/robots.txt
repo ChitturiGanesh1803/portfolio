@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Allow: /index.html
-Allow: /pages/certificate.html
-Allow: /pages/gallery.html
-
-Sitemap: https://chitturiganesh1803.github.io/portfolio/sitemap.xml
