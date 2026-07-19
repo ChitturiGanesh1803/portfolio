@@ -69,6 +69,7 @@ h1::after {
     border-color var(--transition) var(--easing),
     box-shadow var(--transition) var(--easing);
   width: 100%;
+  aspect-ratio: 1 / 1; /* Make the entire card container a perfect square */
   text-align: center;
   box-shadow: 0 10px 26px var(--shadow);
   display: flex;
@@ -84,7 +85,8 @@ h1::after {
 
 .college img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  flex: 1; /* Let the image grow/shrink to fill the square card */
+  min-height: 0; /* Allow the image to shrink below content size */
   object-fit: cover;
   transition: filter 0.4s ease;
 }
