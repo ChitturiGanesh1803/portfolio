@@ -179,28 +179,14 @@
   }
 
   window.addEventListener("load", () => {
+    // Always force scroll to top on fresh page load to display the Hero section first
+    window.scrollTo(0, 0);
     const hash = window.location.hash;
-    const referrer = document.referrer || "";
-    const navigatedFromSubpage =
-      referrer.includes("gallery.html") || referrer.includes("certificate.html") || referrer.includes("/pages/");
-
-    if (hash && navigatedFromSubpage) {
-      const target = document.querySelector(hash);
-      if (target) {
-        // Delay slightly to let layout/preloader finish
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
-    } else {
-      // Force scroll to top on fresh load/reload
-      window.scrollTo(0, 0);
-      if (hash) {
-        if (history.pushState) {
-          history.pushState("", document.title, window.location.pathname + window.location.search);
-        } else {
-          window.location.hash = "";
-        }
+    if (hash) {
+      if (history.pushState) {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      } else {
+        window.location.hash = "";
       }
     }
   });

@@ -14,10 +14,17 @@
     />
     <link rel="canonical" href="https://chitturiganesh1803.github.io/portfolio/pages/gallery.html" />
 
-    <!-- Prevent automatic scroll restoration on load -->
+    <!-- Prevent automatic scroll restoration and hash scroll on load -->
     <script>
       if ("scrollRestoration" in history) {
         history.scrollRestoration = "manual";
+      }
+      if (window.location.hash) {
+        if (history.replaceState) {
+          history.replaceState("", document.title, window.location.pathname + window.location.search);
+        } else {
+          window.location.hash = "";
+        }
       }
     </script>
 
