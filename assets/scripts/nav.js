@@ -157,4 +157,19 @@
       window.location.href = isSubPage ? "../index.html" : "./index.html";
     }
   };
+
+  // Logo Click Scroll to Top
+  document.querySelectorAll(".logo").forEach((logo) => {
+    logo.addEventListener("click", (e) => {
+      if (isHomePage) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (history.pushState) {
+          history.pushState("", document.title, window.location.pathname + window.location.search);
+        } else {
+          window.location.hash = "";
+        }
+      }
+    });
+  });
 })();
